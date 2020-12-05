@@ -5,25 +5,20 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] List<Block> path;
+    [SerializeField] List<WayPoint> path;
 
     // Start is called before the first frame update
     void Start()
     {
-        PrintAllWaypoints();
+        StartCoroutine(FollowPath());
     }
 
-    private void PrintAllWaypoints()
+    private IEnumerator FollowPath()
     {
-        foreach (Block waypoint in path)
+        foreach (WayPoint waypoint in path)
         {
-            print(waypoint.name);
+            transform.position = waypoint.transform.position;
+            yield return new WaitForSeconds(1f);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
