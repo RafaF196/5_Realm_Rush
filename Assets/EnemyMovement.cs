@@ -5,15 +5,16 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] List<WayPoint> path;
-
+    
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(FollowPath());
+        PathFinder pathFinder = FindObjectOfType<PathFinder>();
+        var path = pathFinder.GetPath();
+        StartCoroutine(FollowPath(path));
     }
-
-    private IEnumerator FollowPath()
+    
+    private IEnumerator FollowPath(List<WayPoint> path)
     {
         foreach (WayPoint waypoint in path)
         {

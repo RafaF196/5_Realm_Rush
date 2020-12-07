@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class WayPoint : MonoBehaviour
 {
+    public bool isExplored = false;
+    public WayPoint exploredFrom;
+
     const int gridSize = 10;
 
     Vector2Int gridPos;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     public int GetGridSize()
     {
