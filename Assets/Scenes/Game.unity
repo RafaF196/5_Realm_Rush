@@ -947,6 +947,7 @@ MonoBehaviour:
   towerLimit: 5
   towerPrefab: {fileID: 363656760207911529, guid: 8f97d6013e76fc54e80fd198587dab35,
     type: 3}
+  towerParent: {fileID: 562414315}
 --- !u!1001 &592714519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2305,6 +2306,7 @@ MonoBehaviour:
   secondsBetweenSpawns: 3
   enemyPrefab: {fileID: 114941686308246830, guid: 04f81ff9814844ccfa08226f8d46a3f4,
     type: 3}
+  enemyParent: {fileID: 1077376377}
 --- !u!1001 &1092319801
 PrefabInstance:
   m_ObjectHideFlags: 0
