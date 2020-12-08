@@ -17,10 +17,11 @@ public class PathFinder : MonoBehaviour
 
     public List<WayPoint> GetPath()
     {
-        LoadBlocks();
-        ColorStartAndEnd();
-        BreadthFirstSearch();
-        CreatePath();
+        if (path.Count == 0) {
+            LoadBlocks();
+            BreadthFirstSearch();
+            CreatePath();
+        }
         return path;
     }
 
@@ -88,12 +89,6 @@ public class PathFinder : MonoBehaviour
             queue.Enqueue(neighbor);
             neighbor.exploredFrom = searchCenter;
         }
-    }
-
-    private void ColorStartAndEnd()
-    {
-        startWayPoint.SetTopColor(Color.green);
-        endWayPoint.SetTopColor(Color.red);
     }
 
     private void LoadBlocks()
