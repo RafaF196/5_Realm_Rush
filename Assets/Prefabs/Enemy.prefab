@@ -64,6 +64,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17d4cb920a204d47be4f12a5ebff1b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementPeriod: 0.5
+  goalParticles: {fileID: 198537983921896907}
 --- !u!114 &4484600253223217939
 MonoBehaviour:
   m_ObjectHideFlags: 0

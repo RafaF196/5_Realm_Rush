@@ -740,6 +740,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 381406098}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &423588475 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198537983921896907, guid: 04f81ff9814844ccfa08226f8d46a3f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 677921669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &450086359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,6 +1135,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114941686308246830, guid: 04f81ff9814844ccfa08226f8d46a3f4,
+        type: 3}
+      propertyPath: goalParticles
+      value: 
+      objectReference: {fileID: 423588475}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f81ff9814844ccfa08226f8d46a3f4, type: 3}
 --- !u!4 &677921670 stripped
@@ -2303,7 +2314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14140b8c9f6dab5409a4e38c162336c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsBetweenSpawns: 3
+  secondsBetweenSpawns: 1.75
   enemyPrefab: {fileID: 114941686308246830, guid: 04f81ff9814844ccfa08226f8d46a3f4,
     type: 3}
   enemyParent: {fileID: 1077376377}
