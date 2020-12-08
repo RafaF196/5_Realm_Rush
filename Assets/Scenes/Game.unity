@@ -1799,6 +1799,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 954753387}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &955075117 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 656781102598702143, guid: 776e98f249db730428b4723fad8fcdd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 656781102458534540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2319,7 +2325,7 @@ PrefabInstance:
     - target: {fileID: 363656760207911528, guid: 8f97d6013e76fc54e80fd198587dab35,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 363656760207911528, guid: 8f97d6013e76fc54e80fd198587dab35,
         type: 3}
@@ -2329,7 +2335,7 @@ PrefabInstance:
     - target: {fileID: 363656760207911528, guid: 8f97d6013e76fc54e80fd198587dab35,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 363656760207911528, guid: 8f97d6013e76fc54e80fd198587dab35,
         type: 3}
@@ -2631,7 +2637,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 3
 --- !u!1001 &1322814603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2989,7 +2995,7 @@ PrefabInstance:
     - target: {fileID: 363656760207911528, guid: 8f97d6013e76fc54e80fd198587dab35,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 363656760207911528, guid: 8f97d6013e76fc54e80fd198587dab35,
         type: 3}
@@ -5056,6 +5062,16 @@ PrefabInstance:
       propertyPath: targetEnemy
       value: 
       objectReference: {fileID: 1321664368}
+    - target: {fileID: 363656760207911529, guid: 8f97d6013e76fc54e80fd198587dab35,
+        type: 3}
+      propertyPath: projectileParticle
+      value: 
+      objectReference: {fileID: 955075117}
+    - target: {fileID: 363656760207911529, guid: 8f97d6013e76fc54e80fd198587dab35,
+        type: 3}
+      propertyPath: attackRange
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 363656760207911531, guid: 8f97d6013e76fc54e80fd198587dab35,
         type: 3}
       propertyPath: m_Name
