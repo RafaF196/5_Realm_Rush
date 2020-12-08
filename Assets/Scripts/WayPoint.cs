@@ -5,6 +5,7 @@ using UnityEngine;
 public class WayPoint : MonoBehaviour
 {
     public bool isExplored = false;
+    public bool isPlaceable = true;
     public WayPoint exploredFrom;
 
     const int gridSize = 10;
@@ -24,9 +25,18 @@ public class WayPoint : MonoBehaviour
         );
     }
 
-    public void SetTopColor(Color color)
+    private void OnMouseOver()
     {
-        MeshRenderer topMeshRenderer = transform.Find("Top").GetComponent<MeshRenderer>();
-        topMeshRenderer.material.color = color;
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (isPlaceable)
+            {
+                print(gameObject.name);
+            }
+            else
+            {
+                print("Not here!");
+            }
+        }
     }
 }

@@ -2244,7 +2244,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsBetweenSpawns: 3
-  enemyPrefab: {fileID: 0}
+  enemyPrefab: {fileID: 1762683035576610881, guid: bae8278a103df9746affe44dea7b47f0,
+    type: 3}
 --- !u!1001 &1092319801
 PrefabInstance:
   m_ObjectHideFlags: 0
