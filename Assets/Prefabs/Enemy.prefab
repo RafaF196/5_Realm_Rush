@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380bd6e24c828604cb898e9122b536aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 5
+  hitPoints: 10
   hitParticlesPrefab: {fileID: 7636387253683633631}
   deathParticlesPrefab: {fileID: 198537983921896907}
   enemyHitSFX: {fileID: 8300000, guid: c369961f60f69104a87e520d040a5504, type: 3}
